@@ -8,7 +8,7 @@ import (
 	"net"
 )
 
-func RegisterGreeterGrpc(port int64, server func(*grpc.Server) error) error {
+func RegisterGreeterGrpc(port int64, server func(s *grpc.Server)) error {
 
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", port))
 	if err != nil {
