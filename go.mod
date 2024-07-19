@@ -1,4 +1,4 @@
-module framework
+module github.com/wangshuaiyi1/day3
 
 go 1.21
 
